@@ -16,6 +16,10 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<sonar.projectKey>alexibro_santaback</sonar.projectKey>
+		<sonar.organization>alexibro-github</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.login>e8a274d6e8d7813f0c03d6e42772dcf07cdb7470</sonar.login>
 	</properties>
 
 	<dependencies>
