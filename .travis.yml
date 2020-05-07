@@ -1,0 +1,8 @@
+language: java
+
+services:
+  - maven
+
+script:
+
+  - mvn sonar:sonar
