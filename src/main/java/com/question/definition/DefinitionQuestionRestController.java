@@ -5,7 +5,9 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.GeneralRestController;
+import com.question.Question;
 import com.question.QuestionController;
+import com.question.QuestionDto;
 import com.question.definition.definition_answer.DefinitionAnswer;
 import com.question.definition.definition_question.DefinitionQuestion;
 
@@ -63,7 +65,8 @@ public class DefinitionQuestionRestController
             this.definitionQuestionService.save(question);
             unit.get().addDefinitionQuestion(question);
             this.unitService.save(unit.get());
-            return new ResponseEntity<>(questionDto, HttpStatus.CREATED);
+            DefinitionQuestionDto dtoReturned = modelMapper.map(questionDto, DefinitionQuestionDto.class);
+            return new ResponseEntity<>(dtoReturned, HttpStatus.CREATED);
         }
 
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -210,7 +213,7 @@ public class DefinitionQuestionRestController
                 .stream()
                 .map(this::convertToAnswerDto)
                 .collect(Collectors.toList()));
-        return  dto;
+        return dto;
     }
 
     private DefinitionQuestion convertToQuestionEntity(DefinitionQuestionDto dto) {
