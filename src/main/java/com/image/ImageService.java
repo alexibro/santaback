@@ -16,7 +16,7 @@ public class ImageService {
     @Autowired
     private ImageRepository imageRepository;
 
-    private final static Logger LOGGER = Logger.getLogger("com.image.ImageService");
+    private static final Logger LOGGER = Logger.getLogger("com.image.ImageService");
 
     public List<Image> findAll() {
         return imageRepository.findAll();

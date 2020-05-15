@@ -1,7 +1,6 @@
 package com.itinerary.lesson;
 
 import com.itinerary.block.BlockDto;
-import com.slide.Slide;
 import com.slide.SlideDto;
 
 import java.util.ArrayList;
@@ -27,8 +26,10 @@ public class LessonDto extends BlockDto {
      * GETTER AND SETTER *
      ********************/
 
+    @Override
     public long getId() { return id; }
 
+    @Override
     public String getName() { return name; }
 
     public List<Long> getQuestionsIds() {
@@ -37,8 +38,10 @@ public class LessonDto extends BlockDto {
 
     public List<SlideDto> getSlides() { return slides; }
 
+    @Override
     public void setId(long id) { this.id = id; }
 
+    @Override
     public void setName(String name) { this.name = name; }
 
     public void setQuestionsIds(List<Long> questionsIds) {

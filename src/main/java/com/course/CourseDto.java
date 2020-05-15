@@ -1,7 +1,6 @@
 package com.course;
 
 import com.itinerary.module.ModuleDto;
-import com.user.User;
 import com.user.UserDto;
 
 import java.util.ArrayList;

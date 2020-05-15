@@ -30,10 +30,12 @@ public class TestQuestionDto extends QuestionDto {
      * Getters and Setters
      */
 
+    @Override
     public void setId(long id) {
         this.id = id;
     }
 
+    @Override
     public long getId() {
         return id;
     }

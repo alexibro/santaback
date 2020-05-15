@@ -1,7 +1,6 @@
 package com.unit;
 
 import com.card.CardDto;
-import com.image.Image;
 import com.image.ImageDto;
 import com.itinerary.lesson.LessonDto;
 import com.itinerary.module.ModuleDto;

@@ -23,6 +23,7 @@ public class ModuleDto extends BlockDto {
      * GETTER AND SETTER *
      ********************/
 
+    @Override
     public long getId() {
         return id;
     }
@@ -31,6 +32,7 @@ public class ModuleDto extends BlockDto {
         return blocks;
     }
 
+    @Override
     public void setId(long id) {
         this.id = id;
     }

@@ -1,6 +1,5 @@
 package com.question;
 
-import com.itinerary.block.Block;
 import com.itinerary.block.BlockDto;
 
 import java.util.HashSet;

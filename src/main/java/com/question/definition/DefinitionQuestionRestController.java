@@ -5,9 +5,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.GeneralRestController;
-import com.question.Question;
 import com.question.QuestionController;
-import com.question.QuestionDto;
 import com.question.definition.definition_answer.DefinitionAnswer;
 import com.question.definition.definition_question.DefinitionQuestion;
 
@@ -164,7 +162,6 @@ public class DefinitionQuestionRestController
         DefinitionAnswer newAnswer = convertToAnswerEntity(newAnswerDto);
 
         if (unit.isPresent() && question.isPresent()) {
-            //TODO query
             Optional<DefinitionAnswer> oldAnswer = this.definitionQuestionService.findOneAnswer(question.get(), answerID);
             if (oldAnswer.isPresent()) {
                 if(newAnswer.isCorrected()) {

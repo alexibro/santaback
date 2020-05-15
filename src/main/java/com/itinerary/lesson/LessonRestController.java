@@ -5,14 +5,10 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.GeneralRestController;
-import com.course.Course;
-import com.course.CourseDto;
 import com.slide.Slide;
 
 import com.slide.SlideDto;
 import com.unit.Unit;
-import com.user.User;
-import com.user.UserDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
